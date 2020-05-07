@@ -1,0 +1,16 @@
+language: node_js
+node_js: 
+  - 10.16.3
+
+
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
+
+
+build:
+  ci:
+   - shippable_retry npm install
+   - shippable_retry npm test
+   - pwd
+
