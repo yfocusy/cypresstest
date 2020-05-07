@@ -1,0 +1,25 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "cypress run",
+    "cypress:open":"cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yfocusy@github.com/yfocusy/cypresstest.git"
+  },
+  "author": "Li Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yfocusy/cypresstest/issues"
+  },
+  "homepage": "https://github.com/yfocusy/cypresstest#readme"
+}
