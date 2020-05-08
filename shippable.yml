@@ -6,11 +6,13 @@ node_js:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - export PERCY_TOKEN=e8705b89bfb281dfbd18aef344e9556fe914d3731b5b4e33d7a15ea09b9c961e
 
 
 build:
   ci:
    - shippable_retry npm install
    - shippable_retry npm test
+   - shippable_retry npm npx percy exer -- cypress run
    - pwd
 
