@@ -12,7 +12,7 @@ before_script:
 build:
   ci:
    - shippable_retry npm install
-   - shippable_retry npm test
-   - shippable_retry npm npx percy exer -- cypress run
+  #  - shippable_retry npm test
+   - shippable_retry npx percy exer -- cypress run
    - pwd
 
