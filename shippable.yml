@@ -13,6 +13,6 @@ build:
   ci:
    - shippable_retry npm install
   #  - shippable_retry npm test
-   - shippable_retry npx percy exer -- cypress run
+   - shippable_retry npx percy exec -- cypress run
    - pwd
 
